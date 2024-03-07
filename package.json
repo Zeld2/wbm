@@ -5,7 +5,7 @@
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.5"
   },
-  "name": "wbm",
+  "name": "@zeld2/wbm",
   "description": "wbm is an API to send bulk messages in whatsapp.",
   "version": "1.1.16",
   "main": "src/index.js",
@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/Briuor/wbm/issues"
   },
-  "homepage": "https://github.com/Briuor/wbm#readme"
+  "homepage": "https://github.com/Briuor/wbm#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
