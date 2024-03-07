@@ -160,7 +160,7 @@ async function sendTo(phoneOrContact, message) {
         await page.goto(`https://web.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`);
         await page.waitForSelector(SELECTORS.LOADING, { hidden: true, timeout: 60000 });
         await page.waitForSelector(SELECTORS.SEND_BUTTON, { timeout: 5000 });
-        await page.keyboard.press("Enter");
+        await page.click(SELECTORS.SEND_BUTTON);
         await page.waitFor(1000);
         process.stdout.clearLine();
         process.stdout.cursorTo(0);
